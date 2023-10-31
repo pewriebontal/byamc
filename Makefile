@@ -6,7 +6,7 @@
 #    By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mkhaing           #+#    #+#              #
-#    Updated: 2023/10/04 18:44:14 by mkhaing          ###   ########.fr        #
+#    Updated: 2023/11/01 02:24:01 by mkhaing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,7 @@ RM		= rm -f
 
 $(NAME):	${OBJS}
 			${CC} ${CFLAGS} -c ${SRCS}
-			ar rc ${NAME} ${OBJS} libft.h
+			ar rc ${NAME} ${OBJS} 
 
 all:		${NAME} bonus
 
@@ -84,6 +84,6 @@ re:			fclean all
 
 bonus:		${BOBJS}
 			${CC} ${CFLAGS} -c ${BSRCS}
-			ar rc ${NAME} ${BOBJS} libft.h
+			ar rc ${NAME} ${BOBJS}
 
 .PHONY:		all clean fclean re

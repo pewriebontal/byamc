@@ -6,13 +6,13 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 20:33:42 by mkhaing           #+#    #+#             */
-/*   Updated: 2023/10/04 18:32:53 by mkhaing          ###   ########.fr       */
+/*   Updated: 2023/11/01 02:23:59 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count(int n)
+int	ft_ilen(int n)
 {
 	int	i;
 
@@ -36,7 +36,7 @@ char	*ft_itoa(int n)
 	char	*str;
 	int		i;
 
-	i = ft_count(n);
+	i = ft_ilen(n);
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
@@ -55,6 +55,40 @@ char	*ft_itoa(int n)
 		i--;
 		str[i] = '0' + (n % 10);
 		n /= 10;
+	}
+	return (str);
+}
+
+int	ft_uilen(unsigned int num)
+{
+	int	len;
+
+	len = 0;
+	while (num != 0)
+	{
+		len++;
+		num = num / 10;
+	}
+	return (len);
+}
+
+char	*ft_uitoa(unsigned int n)
+{
+	char	*str;
+	int		i;
+
+	i = ft_uilen(n);
+	if (n == 0)
+		return (ft_strdup("0"));
+	str = (char *)malloc(sizeof(char) * (i + 1));
+	if (!str)
+		return (0);
+	str[i] = '\0';
+	while (n != 0)
+	{
+		str[i - 1] = n % 10 + 48;
+		n = n / 10;
+		i--;
 	}
 	return (str);
 }
