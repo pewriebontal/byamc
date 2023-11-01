@@ -6,7 +6,7 @@
 #    By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mkhaing           #+#    #+#              #
-#    Updated: 2023/11/01 02:24:01 by mkhaing          ###   ########.fr        #
+#    Updated: 2023/11/01 16:44:13 by mkhaing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,9 +24,11 @@ SRCS	= ft_atoi.c \
 		  ft_memchr.c \
 		  ft_memset.c \
 		  ft_putchar_fd.c \
+		  ft_putchar.c \
 		  ft_putstr_fd.c \
 		  ft_putendl_fd.c \
 		  ft_putnbr_fd.c \
+		  ft_putnbr_base.c \
 		  ft_substr.c \
 		  ft_split.c \
 		  ft_strtrim.c \
@@ -64,7 +66,7 @@ BOBJS	= ${BSRCS:.c=.o}
 NAME	= libft.a
 
 CC		= cc
-CFLAGS	= -Wall -Wextra -Werror -std=c99
+CFLAGS	= -Wall -Wextra -Werror
 
 RM		= rm -f
 
