@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
 #include "../../ft_printf.h"
+#include "../../libft.h"
 
 int	handle_int(int n)
 {
