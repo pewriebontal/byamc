@@ -6,7 +6,7 @@
 #    By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mkhaing           #+#    #+#              #
-#    Updated: 2023/11/02 00:28:04 by mkhaing          ###   ########.fr        #
+#    Updated: 2023/11/24 13:00:51 by mkhaing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,9 @@ FT_TO_SRC=$(SRC_DIR)ft_to/ft_atoi.c \
 		  $(SRC_DIR)ft_to/ft_toupper.c \
 		  $(SRC_DIR)ft_to/ft_itoa.c
 
-SRCS	= $(FT_IS_SRC) $(FT_LST_SRC) $(FT_MEM_SRC) $(FT_PRINT_SRC) $(FT_PUT_SRC) $(FT_STR_SRC) $(FT_TO_SRC)
+GNL_SRC=$(SRC_DIR)gnl/get_next_line.c
+
+SRCS	= $(FT_IS_SRC) $(FT_LST_SRC) $(FT_MEM_SRC) $(FT_PRINT_SRC) $(FT_PUT_SRC) $(FT_STR_SRC) $(FT_TO_SRC) $(GNL_SRC)
 
 OBJS	= ${SRCS:.c=.o}
 
