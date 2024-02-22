@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 16:06:13 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/02/22 18:45:06 by mkhaing          ###   ########.fr       */
+/*   Created: 2024/02/22 18:41:09 by mkhaing           #+#    #+#             */
+/*   Updated: 2024/02/22 18:45:12 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../libft.h"
 
-int	ft_atoi(char *str)
+long	ft_atol(char *str)
 {
-	int	result;
-	int	sign;
+	long	result;
+	int		sign;
 
 	result = 0;
 	sign = 1;
@@ -31,5 +31,5 @@ int	ft_atoi(char *str)
 		result = result * 10 + (*str - '0');
 		++str;
 	}
-	return (sign * (int)result);
+	return (sign * (long)result);
 }
