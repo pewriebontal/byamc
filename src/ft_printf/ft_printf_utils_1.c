@@ -6,12 +6,12 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 04:58:16 by mkhaing           #+#    #+#             */
-/*   Updated: 2023/11/02 01:38:06 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../ft_printf.h"
-#include "../../libft.h"
+#include "../../byamc.h"
 
 int	handle_int(int n)
 {

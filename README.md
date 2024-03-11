@@ -1,4 +1,4 @@
-# LibFT
+# LIB-BYAMC (pronounced "lib-b-yam-see") - Bon's Yet Another Mini C Standard Library 
 
 This project is a collection of various utility functions and modules written in C as part of 42's core curriculum. It includes functions for checking character types, manipulating lists, memory management, string manipulation, get_next_line and printf.
 
@@ -17,10 +17,10 @@ The project is structured into several directories, each containing related func
 
 ## Usage
 
-To use the functions in this project, include the appropriate header files in your C source files. For example, to use the ft_isalpha function, you would include the libft.h header file:
+To use the functions in this project, include the appropriate header files in your C source files. For example, to use the ft_isalpha function, you would include the byamc.h header file:
 
 ```c
-#include "libft.h"
+#include "byamc.h"
 #include "ft_printf.h"
 ```
 

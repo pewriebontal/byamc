@@ -6,11 +6,11 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 17:28:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2023/11/02 01:37:26 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../../byamc.h"
 
 char	*ft_strchr(const char *s, int c)
 {

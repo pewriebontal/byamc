@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   byamc.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 17:41:44 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/11 19:00:22 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef BYAMC_H
+# define BYAMC_H
 
 # include <stddef.h>
 # include <stdio.h>
@@ -88,4 +88,4 @@ int					ft_tolower(int c);
 long				ft_atol(char *str);
 int					ft_atoi(char *str);
 
-#endif // LIBFT_H
+#endif // BYAMC_H

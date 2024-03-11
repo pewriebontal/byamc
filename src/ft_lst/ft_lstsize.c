@@ -6,11 +6,11 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 14:42:16 by mkhaing           #+#    #+#             */
-/*   Updated: 2023/11/02 01:37:26 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../libft.h"
+#include "../../byamc.h"
 
 int	ft_lstsize(t_list *lst)
 {

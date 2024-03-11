@@ -6,7 +6,7 @@
 #    By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mkhaing           #+#    #+#              #
-#    Updated: 2024/03/11 17:41:23 by mkhaing          ###   ########.fr        #
+#    Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,7 @@ SRCS	= $(FT_IS_SRC) $(FT_LST_SRC) $(FT_MEM_SRC) $(FT_PRINT_SRC) $(FT_PUT_SRC) $(
 
 OBJS	= ${SRCS:.c=.o}
 
-NAME	= libft.a
+NAME	= byamc.a
 
 all:		${NAME}
 

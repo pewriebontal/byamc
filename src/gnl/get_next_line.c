@@ -6,12 +6,12 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 00:33:39 by mkhaing           #+#    #+#             */
-/*   Updated: 2023/11/24 13:00:46 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../gnl.h"
-#include "../../libft.h"
+#include "../../byamc.h"
 
 char	*find_new_line(char **temp_box)
 {
@@ -45,10 +45,10 @@ char	*do_read(int fd)
 	char	*buffer;
 	int		bytes_read;
 
-	buffer = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	buffer = (char *)malloc(sizeof(char) * (GNL_BUFFER_SIZE + 1));
 	if (!buffer)
 		return (NULL);
-	bytes_read = read(fd, buffer, BUFFER_SIZE);
+	bytes_read = read(fd, buffer, GNL_BUFFER_SIZE);
 	if (bytes_read <= 0)
 	{
 		free(buffer);
@@ -89,7 +89,7 @@ char	*get_next_line(int fd)
 {
 	static char	*temp_box[1024];
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, NULL, 0) < 0)
+	if (fd < 0 || GNL_BUFFER_SIZE <= 0 || read(fd, NULL, 0) < 0)
 	{
 		free(temp_box[fd]);
 		temp_box[fd] = NULL;
