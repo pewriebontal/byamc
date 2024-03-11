@@ -6,19 +6,20 @@
 #    By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mkhaing           #+#    #+#              #
-#    Updated: 2023/11/24 13:00:51 by mkhaing          ###   ########.fr        #
+#    Updated: 2024/03/11 17:41:23 by mkhaing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC_DIR=src/
 
-CC		= cc
+CC		= clang
 CFLAGS	= -Wall -Wextra -Werror
 
 RM		= rm -f
 
 FT_IS_SRC=$(SRC_DIR)ft_is/ft_isalnum.c \
 		  $(SRC_DIR)ft_is/ft_isalpha.c \
+		  $(SRC_DIR)ft_is/ft_isspace.c \
 		  $(SRC_DIR)ft_is/ft_isascii.c \
 		  $(SRC_DIR)ft_is/ft_isdigit.c \
 		  $(SRC_DIR)ft_is/ft_isprint.c
@@ -68,7 +69,8 @@ FT_STR_SRC=$(SRC_DIR)ft_str/ft_substr.c \
 		  $(SRC_DIR)ft_str/ft_strncmp.c \
 		  $(SRC_DIR)ft_str/ft_strloc.c
 
-FT_TO_SRC=$(SRC_DIR)ft_to/ft_atoi.c \
+FT_TO_SRC=$(SRC_DIR)ft_to/ft_atol.c \
+		  $(SRC_DIR)ft_to/ft_atoi.c \
 		  $(SRC_DIR)ft_to/ft_tolower.c \
 		  $(SRC_DIR)ft_to/ft_toupper.c \
 		  $(SRC_DIR)ft_to/ft_itoa.c

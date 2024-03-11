@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2023/11/01 20:57:20 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/11 17:41:44 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int					ft_isdigit(int c);
 int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
+int					ft_isspace(int c);
 
 // ft_mem
 void				*ft_memset(void *s, int c, size_t n);
@@ -84,6 +85,7 @@ char				*ft_itoa(int n);
 char				*ft_uitoa(unsigned int n);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
+long				ft_atol(char *str);
 int					ft_atoi(char *str);
 
 #endif // LIBFT_H
