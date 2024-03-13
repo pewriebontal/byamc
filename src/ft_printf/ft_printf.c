@@ -6,11 +6,11 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 20:53:36 by mkhaing           #+#    #+#             */
-/*   Updated: 2023/11/02 01:38:17 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 21:08:33 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../ft_printf.h"
+#include <byamc/ft_printf.h>
 
 int	do_print(va_list list_args, const char fmt)
 {

@@ -6,12 +6,12 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 01:53:45 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 21:18:35 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../ft_printf.h"
-#include "../../byamc.h"
+#include <byamc/byamc.h>
+#include <byamc/ft_printf.h>
 
 int	handle_char(int c)
 {

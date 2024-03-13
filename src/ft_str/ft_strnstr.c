@@ -6,11 +6,11 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:47:49 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 21:27:46 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../byamc.h"
+#include <byamc/byamc.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

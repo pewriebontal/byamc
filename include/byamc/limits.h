@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   gnl.h                                              :+:      :+:    :+:   */
+/*   limits.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/25 03:13:16 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 19:00:17 by mkhaing          ###   ########.fr       */
+/*   Created: 2024/03/13 20:37:29 by mkhaing           #+#    #+#             */
+/*   Updated: 2024/03/13 20:38:19 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GNL_H
-# define GNL_H
+#ifndef LIMITS_H
+# define LIMITS_H
 
 # ifndef GNL_BUFFER_SIZE
 #  define GNL_BUFFER_SIZE 69
 # endif
 
-# include <stdlib.h>
-# include <unistd.h>
-
-char	*get_next_line(int fd);
-
-#endif
+#endif /* LIMITS_H */

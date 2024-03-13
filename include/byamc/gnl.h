@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   gnl.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/26 20:38:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/13 21:08:33 by mkhaing          ###   ########.fr       */
+/*   Created: 2023/10/25 03:13:16 by mkhaing           #+#    #+#             */
+/*   Updated: 2024/03/13 20:38:24 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#ifndef GNL_H
+# define GNL_H
 
-char	*ft_strdup(char const *src)
-{
-	char	*dest;
-	int		len;
+# include <stdlib.h>
+# include <unistd.h>
 
-	if (!src)
-		return (NULL);
-	len = ft_strlen(src);
-	dest = malloc(sizeof(char) * (len + 1));
-	ft_memcpy(dest, src, len);
-	dest[len] = '\0';
-	return (dest);
-}
+char	*get_next_line(int fd);
+
+#endif /* GNL_H */

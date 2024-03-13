@@ -6,11 +6,11 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 21:07:09 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 21:08:33 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../byamc.h"
+#include <byamc/byamc.h>
 
 t_list	*ft_lstnew(void *content)
 {

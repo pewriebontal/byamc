@@ -6,13 +6,14 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 19:00:22 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 21:13:59 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BYAMC_H
 # define BYAMC_H
 
+# include <byamc/bool.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <stdlib.h>
@@ -88,4 +89,4 @@ int					ft_tolower(int c);
 long				ft_atol(char *str);
 int					ft_atoi(char *str);
 
-#endif // BYAMC_H
+#endif /* BYAMC_H */

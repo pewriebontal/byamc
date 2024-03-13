@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   bool.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/26 20:38:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/13 21:08:33 by mkhaing          ###   ########.fr       */
+/*   Created: 2024/03/13 20:18:09 by mkhaing           #+#    #+#             */
+/*   Updated: 2024/03/13 21:31:24 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#ifndef BOOL_H
+# define BOOL_H
 
-char	*ft_strdup(char const *src)
-{
-	char	*dest;
-	int		len;
+# define CAP 0
+# define NOCAP 1
 
-	if (!src)
-		return (NULL);
-	len = ft_strlen(src);
-	dest = malloc(sizeof(char) * (len + 1));
-	ft_memcpy(dest, src, len);
-	dest[len] = '\0';
-	return (dest);
-}
+#endif /* BOOL_H */

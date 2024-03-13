@@ -1,27 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   colors.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/26 20:38:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/13 21:08:33 by mkhaing          ###   ########.fr       */
+/*   Created: 2024/03/13 21:10:20 by mkhaing           #+#    #+#             */
+/*   Updated: 2024/03/13 21:10:48 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#ifndef COLORS_H
+# define COLORS_H
 
-char	*ft_strdup(char const *src)
-{
-	char	*dest;
-	int		len;
-
-	if (!src)
-		return (NULL);
-	len = ft_strlen(src);
-	dest = malloc(sizeof(char) * (len + 1));
-	ft_memcpy(dest, src, len);
-	dest[len] = '\0';
-	return (dest);
-}
+#endif /* COLORS_H */

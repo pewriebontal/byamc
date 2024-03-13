@@ -6,12 +6,13 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 00:33:39 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 21:08:33 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../gnl.h"
-#include "../../byamc.h"
+#include <byamc/byamc.h>
+#include <byamc/gnl.h>
+#include <byamc/limits.h>
 
 char	*find_new_line(char **temp_box)
 {

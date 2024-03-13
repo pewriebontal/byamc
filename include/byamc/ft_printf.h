@@ -6,14 +6,14 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 20:55:30 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/11 18:56:47 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 21:11:13 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "byamc.h"
+# include <byamc/byamc.h>
 # include <stdarg.h>
 # include <stdint.h>
 
@@ -33,4 +33,4 @@ int	handle_unsigned(unsigned int n);
 int	handle_hex(unsigned int n, char fmt);
 int	handle_percent(void);
 
-#endif // FT_PRINTF_H
+#endif /* FT_PRINTF_H */
