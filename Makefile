@@ -6,7 +6,7 @@
 #    By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mkhaing           #+#    #+#              #
-#    Updated: 2024/03/13 21:03:31 by mkhaing          ###   ########.fr        #
+#    Updated: 2024/03/13 22:55:58 by mkhaing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,9 +88,13 @@ all:		${NAME}
 
 $(NAME):	${OBJS}
 			ar rc ${NAME} ${OBJS}
+			ranlib ${NAME}
+
+so:			${OBJS}
+			$(CC) -shared -o byamc.so $(OBJS)
 
 %.o: %.c
-			$(CC) $(CFLAGS) -c $< -o $@
+			$(CC) -fPIC $(CFLAGS) -c $< -o $@
 
 clean:
 			${RM} ${OBJS}

@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:47:49 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/13 21:27:46 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 22:37:04 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	n_len;
 	char	*hay;
 
+	if (!big || !little)
+		return (NULL);
 	i = 0;
 	hay = (char *)big;
 	n_len = ft_strlen(little);

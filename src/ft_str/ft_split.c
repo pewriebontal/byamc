@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 15:05:37 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/13 21:26:43 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/03/13 22:38:29 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,11 @@ char	**ft_split(char const *s, char c)
 	int		index;
 	char	**split;
 
+	if (!s)
+		return (NULL);
 	split = malloc((ft_count_str(s, c) + 1) * sizeof(char *));
-	if (!s || !split)
-		return (0);
+	if (!split)
+		return (NULL);
 	i = 0;
 	j = 0;
 	index = -1;
