@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   bool.h                                             :+:      :+:    :+:   */
+/*   yeet.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/13 20:18:09 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/14 02:02:14 by mkhaing          ###   ########.fr       */
+/*   Created: 2024/03/14 21:06:21 by mkhaing           #+#    #+#             */
+/*   Updated: 2024/03/14 21:17:55 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BOOL_H
-# define BOOL_H
+#include <byamc/gzdef.h>
 
-# define TRUE 1
-# define FALSE 0
-
-# define CAP 0
-# define NOCAP 1
-
-#endif /* BOOL_H */
+void	yeet(void *ptr)
+{
+	free(ptr);
+}

@@ -21,6 +21,8 @@
 #  define NULLPTR "(nil)"
 # elif defined(__APPLE__)
 #  define NULLPTR "0x0"
+# else
+#  define NULLPTR "NULL"
 # endif
 
 int	ft_printf(const char *fmt, ...);
