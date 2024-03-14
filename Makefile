@@ -6,7 +6,7 @@
 #    By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mkhaing           #+#    #+#              #
-#    Updated: 2024/03/14 21:19:44 by mkhaing          ###   ########.fr        #
+#    Updated: 2024/03/14 22:01:06 by mkhaing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ INCLUDE_DIR=include/
 
 CC		= clang
 CFLAGS	= -Wall -Wextra -Werror -I$(INCLUDE_DIR)
+OPTI	= -O3 -march=native -funroll-loops -flto -pipe -ffast-math
 
 RM		= rm -f
 
@@ -95,10 +96,10 @@ $(NAME):	${OBJS}
 			ranlib ${NAME}
 
 so:			${OBJS}
-			$(CC) -shared -o byamc.so $(OBJS)
+			$(CC) $(CFLAGS) $(OPTI) -shared -o byamc.so $(OBJS)
 
 %.o: %.c
-			$(CC) -fPIC $(CFLAGS) -c $< -o $@
+			$(CC) -fPIC $(OPTI) $(CFLAGS) -c $< -o $@
 
 clean:
 			${RM} ${OBJS}
