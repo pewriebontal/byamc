@@ -1,5 +1,9 @@
 # LIB-BYAMC (pronounced "lib-b-yam-see") - Bon's Yet Another Mini C Standard Library 
 
+<p align="center">
+<img src="https://dl.bontal.net/graphics/webp/byamc/logo_no_bg.webp" alt="Byamc Logo" width="250"/>
+</p>
+
 This project is a collection of various utility functions and modules written in C as part of 42's core curriculum. It includes functions for checking character types, manipulating lists, memory management, string manipulation, get_next_line and printf.
 
 ## Structure
