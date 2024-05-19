@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/13 21:13:59 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/05/19 20:18:29 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
 void				*ft_calloc(size_t count, size_t size);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
+void				ft_free_multi_dimensional_array(void **array, int dimensions);
 
 // ft_lst
 t_list				*ft_lstnew(void *content);
