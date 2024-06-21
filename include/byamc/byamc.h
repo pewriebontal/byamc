@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/06/21 19:13:13 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/06/21 20:06:58 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,7 @@ size_t				ft_strlcat(char *dst, const char *src, size_t size);
 
 // ft_strn
 char				*ft_strncpy(char *dst, const char *src, size_t len);
+char				*ft_strndup(char const *src, size_t n);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
