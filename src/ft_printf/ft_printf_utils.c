@@ -6,20 +6,20 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 01:53:45 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/13 21:18:35 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/06/23 16:25:35 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <byamc/byamc.h>
 #include <byamc/ft_printf.h>
 
-int	handle_char(int c)
+int	handle_char(int c, int fd)
 {
-	ft_putchar_fd(c, 1);
+	ft_putchar_fd(c, fd);
 	return (1);
 }
 
-int	handle_string(char *str)
+int	handle_string(char *str, int fd)
 {
 	int	length_printed;
 
@@ -27,46 +27,46 @@ int	handle_string(char *str)
 	if (!str)
 		str = "(null)";
 	length_printed = ft_strlen(str);
-	ft_putstr_fd(str, 1);
+	ft_putstr_fd(str, fd);
 	return (length_printed);
 }
 
-int	handle_ptr(unsigned long long ptr)
+int	handle_ptr(unsigned long long ptr, int fd)
 {
 	int	length_printed;
 
 	length_printed = 0;
 	if (ptr == 0)
 	{
-		length_printed = handle_string(NULLPTR);
+		length_printed = handle_string(NULLPTR, fd);
 	}
 	else
 	{
-		ft_putstr_fd("0x", 1);
+		ft_putstr_fd("0x", fd);
 		length_printed += 2;
-		length_printed += ft_putnbr_base(ptr, "0123456789abcdef");
+		length_printed += ft_putnbr_base_fd(ptr, "0123456789abcdef", fd);
 	}
 	return (length_printed);
 }
 
-int	handle_hex(unsigned int n, char fmt)
+int	handle_hex(unsigned int n, char fmt, int fd)
 {
 	int	length_printed;
 
 	length_printed = 0;
 	if (fmt == 'x')
 	{
-		length_printed += (ft_putnbr_base(n, "0123456789abcdef"));
+		length_printed += (ft_putnbr_base_fd(n, "0123456789abcdef", fd));
 	}
 	else
 	{
-		length_printed += (ft_putnbr_base(n, "0123456789ABCDEF"));
+		length_printed += (ft_putnbr_base_fd(n, "0123456789ABCDEF", fd));
 	}
 	return (length_printed);
 }
 
-int	handle_percent(void)
+int	handle_percent(int fd)
 {
-	ft_putchar_fd('%', 1);
+	ft_putchar_fd('%', fd);
 	return (1);
 }

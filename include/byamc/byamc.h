@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/06/21 20:06:58 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/06/23 16:23:07 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,14 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 
 // ft_put
 int					ft_putchar(char c);
-void				ft_putchar_fd(char c, int fd);
+int					ft_putnbr_base(unsigned long long nb, const char *base);
+
+// ft_put_fd
+int					ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-int					ft_putnbr_base(unsigned long long nb, const char *base);
+int					ft_putnbr_base_fd(unsigned long long nb, const char *base, int fd);
 
 // ft_str
 char				*ft_substr(char const *s, unsigned int start, size_t len);
