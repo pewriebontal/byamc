@@ -66,7 +66,8 @@ int					ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-int					ft_putnbr_base_fd(unsigned long long nb, const char *base, int fd);
+int					ft_putnbr_base_fd(unsigned long long nb, const char *base,
+						int fd);
 
 // ft_str
 char				*ft_substr(char const *s, unsigned int start, size_t len);

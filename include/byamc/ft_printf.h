@@ -26,7 +26,7 @@
 # endif
 
 int	ft_printf(const char *fmt, ...);
-int ft_dprintf(int fd, const char *fmt, ...);
+int	ft_dprintf(int fd, const char *fmt, ...);
 
 int	handle_char(int c, int fd);
 int	handle_string(char *str, int fd);
