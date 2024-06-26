@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/06/23 16:23:07 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/06/26 20:50:39 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int					ft_isalnum(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_isspace(int c);
+int					ft_isnumeric(const char *str);
 
 // ft_mem
 void				*ft_memset(void *s, int c, size_t n);
