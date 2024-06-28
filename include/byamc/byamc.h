@@ -44,6 +44,7 @@ void				*ft_memchr(const void *s, int c, size_t n);
 void				*ft_calloc(size_t count, size_t size);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				ft_free_multidi(void **array, int dimensions);
+void				*ft_realloc(void *ptr, size_t size);
 
 // ft_lst
 t_list				*ft_lstnew(void *content);
