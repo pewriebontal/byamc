@@ -6,7 +6,7 @@
 /*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 20:58:27 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/03/14 21:17:42 by mkhaing          ###   ########.fr       */
+/*   Updated: 2024/07/17 16:31:38 by mkhaing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,10 @@
 
 void	*chope(size_t size)
 {
-	return (malloc(size));
+	void	*ptr;
+
+	ptr = malloc(size);
+	if (ptr)
+		memset(ptr, 0, size);
+	return (ptr);
 }
