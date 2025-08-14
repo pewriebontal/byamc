@@ -3,22 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_realloc.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
+/*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/29 01:59:47 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/07/07 00:08:15 by mkhaing          ###   ########.fr       */
+/*   Created: 2024/06/29 01:59:47 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/08/15 04:51:28 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <byamc/byamc.h>
+#include <byamc/gzdef.h>
 
 void	*ft_realloc(void *ptr, size_t old_size, size_t new_size)
 {
 	void	*new_ptr;
+	size_t	copy_size;
 
-	if (new_size == 0 && ptr != NULL)
+	if (new_size == 0)
 	{
-		free(ptr);
+		yeet(&ptr);
 		return (NULL);
 	}
 	if (ptr == NULL)
@@ -27,9 +29,10 @@ void	*ft_realloc(void *ptr, size_t old_size, size_t new_size)
 	if (new_ptr == NULL)
 		return (NULL);
 	if (old_size < new_size)
-		ft_memcpy(new_ptr, ptr, old_size);
+		copy_size = old_size;
 	else
-		ft_memcpy(new_ptr, ptr, new_size);
-	free(ptr);
+		copy_size = new_size;
+	ft_memcpy(new_ptr, ptr, copy_size);
+	yeet(&ptr);
 	return (new_ptr);
 }
