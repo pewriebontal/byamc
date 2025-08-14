@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   gzdef.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
+/*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/14 02:00:20 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/07/17 16:31:47 by mkhaing          ###   ########.fr       */
+/*   Created: 2024/03/14 02:00:20 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/08/15 04:02:29 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@
 # define vibecheck if
 
 void	*chope(size_t size);
-void	yeet(void *ptr);
+void	yeet(void **ptr);
 int		spill_the_tea(const char *fmt, ...);
 
 #endif /* GZDEF_H */
