@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   byamc.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkhaing <0x@bontal.net>                    +#+  +:+       +#+        */
+/*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/14 13:19:17 by mkhaing           #+#    #+#             */
-/*   Updated: 2024/07/07 00:09:06 by mkhaing          ###   ########.fr       */
+/*   Created: 2023/09/14 13:19:17 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/08/15 04:43:32 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,10 @@ void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
 void				*ft_calloc(size_t count, size_t size);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
-void				ft_free_multidi(void **array, int dimensions);
+void				*allocate_multidim_array(int dimensions,
+						const size_t *dim_sizes);
+void				free_multidim_array(void *array, int dimensions,
+						const size_t *dim_sizes);
 void				*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
 // ft_lst
