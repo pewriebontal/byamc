@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 20:02:39 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 04:29:06 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:03:40 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,8 @@
  * free_multidim_array(my_3d_array, NUM_DIMS, sizes);
  * ```
  */
-void	free_multidim_array(void *array, int dimensions, size_t *dim_sizes)
+void	free_multidim_array(void *array, int dimensions,
+		const size_t *dim_sizes)
 {
 	void	**ptr_array;
 	size_t	current_dim_size;

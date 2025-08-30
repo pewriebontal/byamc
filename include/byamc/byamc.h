@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:19:17 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/18 03:14:09 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:03:47 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n);
 void				*allocate_multidim_array(int dimensions,
 						const size_t *dim_sizes);
 void				free_multidim_array(void *array, int dimensions,
-						size_t *dim_sizes);
+						const size_t *dim_sizes);
 
 void				*ft_realloc(void *ptr, size_t old_size, size_t new_size);
 
