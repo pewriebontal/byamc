@@ -6,78 +6,71 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 20:53:36 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:36:47 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <byamc/ft_printf.h>
 
-int	do_print(va_list list_args, const char fmt, int fd)
+static int	do_print(int fd, char fmt, va_list args)
 {
-	int	length_printed;
-
-	length_printed = 0;
 	if (fmt == 'c')
-		length_printed += handle_char(va_arg(list_args, int), fd);
+		return (handle_char(va_arg(args, int), fd));
 	else if (fmt == 's')
-		length_printed += handle_string(va_arg(list_args, char *), fd);
+		return (handle_string(va_arg(args, char *), fd));
 	else if (fmt == 'p')
-		length_printed += handle_ptr(va_arg(list_args, unsigned long long), fd);
+		return (handle_ptr(va_arg(args, unsigned long long), fd));
 	else if (fmt == 'd' || fmt == 'i')
-		length_printed += handle_int(va_arg(list_args, int), fd);
+		return (handle_int(va_arg(args, int), fd));
 	else if (fmt == 'u')
-		length_printed += handle_unsigned(va_arg(list_args, unsigned int), fd);
+		return (handle_unsigned(va_arg(args, unsigned int), fd));
 	else if (fmt == 'x' || fmt == 'X')
-		length_printed += handle_hex(va_arg(list_args, unsigned int), fmt, fd);
+		return (handle_hex(va_arg(args, unsigned int), fmt, fd));
 	else if (fmt == '%')
-		length_printed += handle_percent(fd);
-	return (length_printed);
+		return (handle_percent(fd));
+	return (0);
 }
 
-int	ft_printf(const char *fmt, ...)
+
+int	ft_vdprintf(int fd, const char *fmt, va_list args)
 {
-	int		num_char_printed;
-	int		i;
-	va_list	list_args;
+	int	num_char_printed;
+	int	i;
 
 	num_char_printed = 0;
 	i = 0;
-	va_start(list_args, fmt);
 	while (fmt[i])
 	{
 		if (fmt[i] == '%')
 		{
-			num_char_printed += do_print(list_args, fmt[i + 1], 1);
-			i++;
-		}
-		else
-			num_char_printed += handle_char(fmt[i], 1);
-		i++;
-	}
-	va_end(list_args);
-	return (num_char_printed);
-}
-
-int	ft_dprintf(int fd, const char *fmt, ...)
-{
-	int		num_char_printed;
-	int		i;
-	va_list	list_args;
-
-	num_char_printed = 0;
-	i = 0;
-	va_start(list_args, fmt);
-	while (fmt[i])
-	{
-		if (fmt[i] == '%')
-		{
-			num_char_printed += do_print(list_args, fmt[i + 1], fd);
+			num_char_printed += do_print(fd, fmt[i + 1], args);
 			i++;
 		}
 		else
 			num_char_printed += handle_char(fmt[i], fd);
 		i++;
 	}
-	va_end(list_args);
 	return (num_char_printed);
+}
+
+int	ft_printf(const char *fmt, ...)
+{
+	va_list	args;
+	int		char_count;
+
+	va_start(args, fmt);
+	char_count = ft_vdprintf(1, fmt, args);
+	va_end(args);
+	return (char_count);
+}
+
+int	ft_dprintf(int fd, const char *fmt, ...)
+{
+	va_list	args;
+	int		char_count;
+
+	va_start(args, fmt);
+	char_count = ft_vdprintf(fd, fmt, args);
+	va_end(args);
+	return (char_count);
 }

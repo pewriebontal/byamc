@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 20:55:30 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:37:46 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@
 
 int	ft_printf(const char *fmt, ...);
 int	ft_dprintf(int fd, const char *fmt, ...);
+int	ft_vdprintf(int fd, const char *fmt, va_list args);
 
 int	handle_char(int c, int fd);
 int	handle_string(char *str, int fd);
