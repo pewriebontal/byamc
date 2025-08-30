@@ -31,7 +31,6 @@ static int	do_print(int fd, char fmt, va_list args)
 	return (0);
 }
 
-
 int	ft_vdprintf(int fd, const char *fmt, va_list args)
 {
 	int	num_char_printed;

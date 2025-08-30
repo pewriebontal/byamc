@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 00:33:39 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:38:31 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 16:58:09 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ char	*find_new_line(char **temp_box)
 					+ 1));
 		if (!withline || !leftovers)
 		{
-			free(withline);
-			free(leftovers);
+			yeet((void **)&withline);
+			yeet((void **)&leftovers);
 			return (NULL);
 		}
-		free(*temp_box);
+		yeet((void **)&*temp_box);
 		*temp_box = leftovers;
 		return (withline);
 	}
@@ -52,7 +52,7 @@ char	*do_read(int fd)
 	bytes_read = read(fd, buffer, GNL_BUFFER_SIZE);
 	if (bytes_read <= 0)
 	{
-		free(buffer);
+		yeet((void **)&buffer);
 		return (NULL);
 	}
 	buffer[bytes_read] = '\0';
@@ -72,17 +72,17 @@ char	*do_get_next_line(char **temp_box, int fd)
 	if (!buffer)
 	{
 		processed_sentence = ft_strdup(*temp_box);
-		free(*temp_box);
+		yeet((void **)&*temp_box);
 		*temp_box = NULL;
 		if (*processed_sentence)
 			return (processed_sentence);
-		free(processed_sentence);
+		yeet((void **)&processed_sentence);
 		return (NULL);
 	}
 	second_temp_box = ft_strjoin(*temp_box, buffer);
-	free(*temp_box);
+	yeet((void **)&*temp_box);
 	*temp_box = second_temp_box;
-	free(buffer);
+	yeet((void **)&buffer);
 	return (do_get_next_line(temp_box, fd));
 }
 
@@ -92,7 +92,7 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || GNL_BUFFER_SIZE <= 0 || read(fd, NULL, 0) < 0)
 	{
-		free(temp_box[fd]);
+		yeet((void **)&temp_box[fd]);
 		temp_box[fd] = NULL;
 		return (NULL);
 	}

@@ -6,13 +6,15 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 03:13:16 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/31 00:41:30 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GNL_H
 # define GNL_H
 
+# include <byamc/byamc.h>
+# include <byamc/gzdef.h>
 # include <stdlib.h>
 # include <unistd.h>
 

@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 20:02:39 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/30 14:03:40 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 18:29:47 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	free_multidim_array(void *array, int dimensions,
 		return ;
 	if (dimensions == 1)
 	{
-		yeet(array);
+		yeet(&array);
 		return ;
 	}
 	ptr_array = (void **)array;
@@ -83,5 +83,5 @@ void	free_multidim_array(void *array, int dimensions,
 		free_multidim_array(ptr_array[i], dimensions - 1, dim_sizes + 1);
 		i++;
 	}
-	yeet(array);
+	yeet(&array);
 }

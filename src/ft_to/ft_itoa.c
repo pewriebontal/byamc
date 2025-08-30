@@ -6,29 +6,30 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 20:33:42 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 16:54:04 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <byamc/byamc.h>
 
-int	ft_ilen(int n)
+static int	ft_numlen(long n, int is_unsigned)
 {
-	int	i;
+	int	len;
 
-	i = 0;
-	if (n < 0)
+	len = 0;
+	if (!is_unsigned && n < 0)
 	{
-		i++;
+		len++;
 		n = -n;
 	}
-	while (n >= 10)
+	if (n == 0)
+		return (1);
+	while (n != 0)
 	{
-		n = n / 10;
-		i++;
+		len++;
+		n /= 10;
 	}
-	i++;
-	return (i);
+	return (len);
 }
 
 char	*ft_itoa(int n)
@@ -36,7 +37,7 @@ char	*ft_itoa(int n)
 	char	*str;
 	int		i;
 
-	i = ft_ilen(n);
+	i = ft_numlen(n, 0);
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	if (n == 0)
@@ -59,25 +60,12 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int	ft_uilen(unsigned int num)
-{
-	int	len;
-
-	len = 0;
-	while (num != 0)
-	{
-		len++;
-		num = num / 10;
-	}
-	return (len);
-}
-
 char	*ft_uitoa(unsigned int n)
 {
 	char	*str;
 	int		i;
 
-	i = ft_uilen(n);
+	i = ft_numlen(n, 1);
 	if (n == 0)
 		return (ft_strdup("0"));
 	str = (char *)malloc(sizeof(char) * (i + 1));

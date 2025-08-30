@@ -6,11 +6,13 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:18:48 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:37:44 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 16:46:03 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <byamc/byamc.h>
+
 int	ft_isalpha(int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	return (ft_is_lowercase(c) || ft_is_uppercase(c));
 }

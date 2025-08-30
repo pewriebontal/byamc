@@ -6,14 +6,15 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 21:06:21 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 04:25:01 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 16:36:40 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <byamc/gzdef.h>
 
 /**
- * @brief Safely frees dynamically allocated memory and sets the pointer to NULL.
+ * @brief Safely frees dynamically allocated memory and
+ * sets the pointer to NULL.
  *
  * This function provides a safe way to release dynamically allocated memory.
  * It checks that both the pointer and the memory it points to are not NULL

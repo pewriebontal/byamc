@@ -6,13 +6,15 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:47:49 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 16:50:31 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <byamc/byamc.h>
+
 int	ft_tolower(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (ft_is_uppercase(c))
 		c = c + 32;
 	return (c);
 }
