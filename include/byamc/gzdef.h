@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 02:00:20 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 04:02:29 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/30 14:28:34 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,7 @@
 void	*chope(size_t size);
 void	yeet(void **ptr);
 int		spill_the_tea(const char *fmt, ...);
+void *secure_the_bag(size_t size);
+void	reset_the_vibe(void *ptr, size_t size);
 
 #endif /* GZDEF_H */
