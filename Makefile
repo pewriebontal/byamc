@@ -6,7 +6,7 @@
 #    By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/03 20:27:07 by mikhaing          #+#    #+#              #
-#    Updated: 2025/11/24 21:31:48 by mikhaing         ###   ########.fr        #
+#    Updated: 2025/11/24 22:00:45 by mikhaing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,70 +44,50 @@ OPTI	= -O3 -march=native -funroll-loops -pipe -ffast-math
 
 RM		= rm -f
 
-SRCS	= $(SRC_DIR)ft_is/ft_isalnum.c \
-		  $(SRC_DIR)ft_is/ft_isalpha.c \
-		  $(SRC_DIR)ft_is/ft_isascii.c \
-		  $(SRC_DIR)ft_is/ft_isdigit.c \
-		  $(SRC_DIR)ft_is/ft_is_lowercase.c \
-		  $(SRC_DIR)ft_is/ft_isnumeric.c \
-		  $(SRC_DIR)ft_is/ft_isprint.c \
-		  $(SRC_DIR)ft_is/ft_isspace.c \
-		  $(SRC_DIR)ft_is/ft_is_uppercase.c \
-		  $(SRC_DIR)ft_mem/ft_alloc_multidim.c \
-		  $(SRC_DIR)ft_mem/ft_bzero.c \
-		  $(SRC_DIR)ft_mem/ft_calloc.c \
-		  $(SRC_DIR)ft_mem/ft_free_multidi.c \
-		  $(SRC_DIR)ft_mem/ft_memchr.c \
-		  $(SRC_DIR)ft_mem/ft_memcmp.c \
-		  $(SRC_DIR)ft_mem/ft_memcpy.c \
-		  $(SRC_DIR)ft_mem/ft_memmove.c \
-		  $(SRC_DIR)ft_mem/ft_memset.c \
-		  $(SRC_DIR)ft_mem/ft_realloc.c \
-		  $(SRC_DIR)ft_put/ft_putchar.c \
-		  $(SRC_DIR)ft_put/ft_putchar_fd.c \
-		  $(SRC_DIR)ft_put/ft_putendl_fd.c \
-		  $(SRC_DIR)ft_put/ft_putnbr_base.c \
-		  $(SRC_DIR)ft_put/ft_putnbr_fd.c \
-		  $(SRC_DIR)ft_put/ft_putstr_fd.c \
-		  $(SRC_DIR)ft_str/ft_split.c \
-		  $(SRC_DIR)ft_str/ft_strcat.c \
-		  $(SRC_DIR)ft_str/ft_strchr.c \
-		  $(SRC_DIR)ft_str/ft_strcmp.c \
-		  $(SRC_DIR)ft_str/ft_strcpy.c \
-		  $(SRC_DIR)ft_str/ft_strdup.c \
-		  $(SRC_DIR)ft_str/ft_striteri.c \
-		  $(SRC_DIR)ft_str/ft_strjoin.c \
-		  $(SRC_DIR)ft_str/ft_strlcat.c \
-		  $(SRC_DIR)ft_str/ft_strlcpy.c \
-		  $(SRC_DIR)ft_str/ft_strlen.c \
-		  $(SRC_DIR)ft_str/ft_strloc.c \
-		  $(SRC_DIR)ft_str/ft_strmapi.c \
-		  $(SRC_DIR)ft_str/ft_strncmp.c \
-		  $(SRC_DIR)ft_str/ft_strncpy.c \
-		  $(SRC_DIR)ft_str/ft_strndup.c \
-		  $(SRC_DIR)ft_str/ft_strnstr.c \
-		  $(SRC_DIR)ft_str/ft_strrchr.c \
-		  $(SRC_DIR)ft_str/ft_strstr.c \
-		  $(SRC_DIR)ft_str/ft_strtok.c \
-		  $(SRC_DIR)ft_str/ft_strtrim.c \
-		  $(SRC_DIR)ft_str/ft_substr.c \
-		  $(SRC_DIR)ft_to/ft_atoi.c \
-		  $(SRC_DIR)ft_to/ft_atol.c \
-		  $(SRC_DIR)ft_to/ft_itoa.c \
-		  $(SRC_DIR)ft_to/ft_tolower.c \
-		  $(SRC_DIR)ft_to/ft_toupper.c
+SRCS	= ft_isalnum.c \
+		  ft_isalpha.c \
+		  ft_isascii.c \
+		  ft_isdigit.c \
+		  ft_isprint.c \
+		  ft_bzero.c \
+		  ft_calloc.c \
+		  ft_memchr.c \
+		  ft_memcmp.c \
+		  ft_memcpy.c \
+		  ft_memmove.c \
+		  ft_memset.c \
+		  ft_putchar_fd.c \
+		  ft_putendl_fd.c \
+		  ft_putnbr_fd.c \
+		  ft_putstr_fd.c \
+		  ft_split.c \
+		  ft_strchr.c \
+		  ft_strdup.c \
+		  ft_striteri.c \
+		  ft_strjoin.c \
+		  ft_strlcat.c \
+		  ft_strlcpy.c \
+		  ft_strlen.c \
+		  ft_strmapi.c \
+		  ft_strncmp.c \
+		  ft_strnstr.c \
+		  ft_strrchr.c \
+		  ft_strtrim.c \
+		  ft_substr.c \
+		  ft_atoi.c \
+		  ft_itoa.c \
+		  ft_tolower.c \
+		  ft_toupper.c
 
-BONUS_SRCS = $(SRC_DIR)ft_lst/ft_lstadd_back.c \
-		  $(SRC_DIR)ft_lst/ft_lstadd_front.c \
-		  $(SRC_DIR)ft_lst/ft_lstclear.c \
-		  $(SRC_DIR)ft_lst/ft_lstdelone.c \
-		  $(SRC_DIR)ft_lst/ft_lstiter.c \
-		  $(SRC_DIR)ft_lst/ft_lstlast.c \
-		  $(SRC_DIR)ft_lst/ft_lstmap.c \
-		  $(SRC_DIR)ft_lst/ft_lstnew.c \
-		  $(SRC_DIR)ft_lst/ft_lstsize.c \
-		  $(SRC_DIR)ft_gz/chope.c \
-		  $(SRC_DIR)ft_gz/yeet.c
+BONUS_SRCS = ft_lstadd_back.c \
+		  ft_lstadd_front.c \
+		  ft_lstclear.c \
+		  ft_lstdelone.c \
+		  ft_lstiter.c \
+		  ft_lstlast.c \
+		  ft_lstmap.c \
+		  ft_lstnew.c \
+		  ft_lstsize.c
 
 OBJS	= ${SRCS:.c=.o}
 BONUS_OBJS = ${BONUS_SRCS:.c=.o}

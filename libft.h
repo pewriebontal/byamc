@@ -6,12 +6,12 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 13:19:17 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/11/24 20:48:33 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 22:04:43 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BYAMC_H
-# define BYAMC_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <stddef.h>
 # include <stdio.h>
@@ -19,13 +19,11 @@
 # include <string.h>
 # include <unistd.h>
 
-
 # define TRUE 1
 # define FALSE 0
 
 # define CAP 0
 # define NOCAP 1
-
 
 # define VIBING 1
 # define NOT_VIBING 0
@@ -37,23 +35,6 @@
 
 # define UNDERSTOOD_THE_ASSIGNMENT 0
 # define BUSTED 1
-
-// TRUE HORROR
-
-// # define period ;
-// # define yikes break
-// # define let_him_cook continue
-// # define adios return ;
-// # define be =
-// # define not !
-// # define non !
-// # define vibecheck if
-
-void	*chope(size_t size);
-void	yeet(void **ptr);
-int		spill_the_tea(const char *fmt, ...);
-void	*secure_the_bag(size_t size);
-void	reset_the_vibe(void *ptr, size_t size);
 
 typedef struct s_list
 {
