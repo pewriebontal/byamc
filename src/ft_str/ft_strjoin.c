@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/24 21:08:40 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/31 01:25:25 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
-	char	*str_ptr;
+	char	*new_str;
+	size_t	len1;
+	size_t	len2;
 
 	if (!s1 || !s2)
 		return (NULL);
-	str = ft_strloc(ft_strlen(s1) + ft_strlen(s2));
-	if (!str)
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	new_str = (char *)malloc(sizeof(char) * (len1 + len2 + 1));
+	if (!new_str)
 		return (NULL);
-	str_ptr = str;
-	while (s1 && *s1)
-		*str++ = *s1++;
-	while (s2 && *s2)
-		*str++ = *s2++;
-	*str = '\0';
-	return (str_ptr);
+	ft_memcpy(new_str, s1, len1);
+	ft_memcpy(new_str + len1, s2, len2);
+	new_str[len1 + len2] = '\0';
+	return (new_str);
 }

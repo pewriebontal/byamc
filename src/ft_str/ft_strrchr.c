@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 17:28:17 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/31 01:28:31 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,17 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*last;
-	char	find;
-	size_t	i;
+	char		*last_occ;
+	const char	to_find = (const char)c;
 
-	last = (char *)s;
-	find = (char)c;
-	i = ft_strlen(s);
-	while (i > 0)
+	last_occ = NULL;
+	while (*s)
 	{
-		if (last[i] == find)
-			return (last + i);
-		i--;
+		if (*s == to_find)
+			last_occ = (char *)s;
+		s++;
 	}
-	if (last[i] == find)
-		return (last);
-	return (0);
+	if (to_find == '\0')
+		return ((char *)s);
+	return (last_occ);
 }

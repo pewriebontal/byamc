@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 13:53:09 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/31 00:54:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/08/31 01:22:55 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	const char	*start;
 
-	i = 0;
-	while (s && s[i] != '\0')
-		i++;
-	return (i);
+	if (!s)
+		return (0);
+	start = s;
+	while (*s)
+		s++;
+	return (s - start);
 }

@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 20:33:42 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/31 00:58:44 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/21 07:08:58 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*dest_fr;
-	unsigned char	*src_fr;
+	unsigned char		*dest_fr;
+	const unsigned char	*src_fr;
 
 	if (src == NULL && dest == NULL)
 		return (NULL);
