@@ -6,12 +6,11 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 16:40:41 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/11/24 22:06:01 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 22:15:24 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

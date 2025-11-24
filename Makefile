@@ -6,7 +6,7 @@
 #    By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/03 20:27:07 by mikhaing          #+#    #+#              #
-#    Updated: 2025/11/24 22:00:45 by mikhaing         ###   ########.fr        #
+#    Updated: 2025/11/24 22:16:35 by mikhaing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@
 SRC_DIR=src/
 INCLUDE_DIR=./
 
-CC		= clang
+CC		= cc
 CFLAGS	= -Wall -Wextra -Werror -I$(INCLUDE_DIR)
 OPTI	= -O3 -march=native -funroll-loops -pipe -ffast-math
 

@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/02 14:13:46 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/11/24 22:06:01 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 22:15:08 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@
  * // Now data is NULL and no memory leak occurs.
  * ```
  */
+
 void	yeet(void **ptr)
 {
 	if (ptr != NULL && *ptr != NULL)

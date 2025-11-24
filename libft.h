@@ -6,17 +6,14 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 13:19:17 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/11/24 22:04:43 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 22:18:07 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 # define TRUE 1
@@ -129,4 +126,4 @@ int					ft_tolower(int c);
 long				ft_atol(const char *str);
 int					ft_atoi(const char *str);
 
-#endif /* BYAMC_H */
+#endif /* KYAMC_H */
