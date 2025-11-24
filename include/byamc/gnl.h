@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/25 03:13:16 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/31 00:41:30 by mikhaing         ###   ########.fr       */
+/*   Created: 2025/10/25 03:13:16 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/11/24 20:21:37 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GNL_H
 
 # include <byamc/byamc.h>
-# include <byamc/gzdef.h>
+# include <libft.h>
 # include <stdlib.h>
 # include <unistd.h>
 

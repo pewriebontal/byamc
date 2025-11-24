@@ -6,11 +6,11 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 20:58:27 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/31 03:48:32 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:21:37 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/gzdef.h>
+#include <libft.h>
 
 void	*chope(size_t size)
 {

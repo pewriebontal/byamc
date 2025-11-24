@@ -6,12 +6,12 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 20:02:39 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/30 18:29:47 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:21:37 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/gzdef.h>
+#include <libft.h>
+#include <libft.h>
 
 /**
  * @brief Recursively frees a dynamically allocated multi-dimensional array.

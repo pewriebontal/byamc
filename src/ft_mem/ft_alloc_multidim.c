@@ -6,12 +6,12 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/15 04:32:30 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/30 18:28:33 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:21:37 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/gzdef.h>
+#include <libft.h>
+#include <libft.h>
 
 static void	*cleanup_on_alloc_fail(void **ptr_array, size_t count,
 		int dimensions, const size_t *dim_sizes)

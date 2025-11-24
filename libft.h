@@ -1,24 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   byamc.h                                            :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 13:19:17 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/11/24 20:02:06 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:48:33 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BYAMC_H
 # define BYAMC_H
 
-# include <byamc/bool.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+
+
+# define TRUE 1
+# define FALSE 0
+
+# define CAP 0
+# define NOCAP 1
+
+
+# define VIBING 1
+# define NOT_VIBING 0
+
+# define CHILLING 1
+# define NOT_CHILLING 0
+
+// EXIT STATUS
+
+# define UNDERSTOOD_THE_ASSIGNMENT 0
+# define BUSTED 1
+
+// TRUE HORROR
+
+// # define period ;
+// # define yikes break
+// # define let_him_cook continue
+// # define adios return ;
+// # define be =
+// # define not !
+// # define non !
+// # define vibecheck if
+
+void	*chope(size_t size);
+void	yeet(void **ptr);
+int		spill_the_tea(const char *fmt, ...);
+void	*secure_the_bag(size_t size);
+void	reset_the_vibe(void *ptr, size_t size);
 
 typedef struct s_list
 {
@@ -110,7 +145,7 @@ char				*ft_itoa(int n);
 char				*ft_uitoa(unsigned int n);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
-long				ft_atol(char *str);
-int					ft_atoi(char *str);
+long				ft_atol(const char *str);
+int					ft_atoi(const char *str);
 
 #endif /* BYAMC_H */

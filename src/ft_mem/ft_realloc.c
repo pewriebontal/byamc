@@ -6,12 +6,12 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/29 01:59:47 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/30 16:58:34 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:21:37 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/gzdef.h>
+#include <libft.h>
+#include <libft.h>
 
 void	*ft_realloc(void *ptr, size_t old_size, size_t new_size)
 {

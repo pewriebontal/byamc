@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/01 16:06:04 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Created: 2025/07/01 16:06:04 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/11/24 20:19:49 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {

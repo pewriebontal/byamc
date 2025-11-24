@@ -6,11 +6,11 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 21:08:44 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/30 14:34:18 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:21:37 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/gzdef.h>
+#include <libft.h>
 
 int	spill_the_tea(const char *fmt, ...)
 {

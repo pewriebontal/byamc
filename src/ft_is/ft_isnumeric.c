@@ -6,11 +6,11 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 19:59:55 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:38:00 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:19:49 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
 int	ft_isnumeric(const char *str)
 {

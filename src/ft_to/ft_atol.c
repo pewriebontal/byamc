@@ -6,13 +6,13 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 18:41:09 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:48:18 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
-long	ft_atol(char *str)
+long	ft_atol(const char *str)
 {
 	long	result;
 	int		sign;

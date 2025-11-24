@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/14 19:47:49 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Created: 2025/09/14 19:47:49 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/11/24 20:19:49 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

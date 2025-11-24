@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/18 13:37:51 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/31 00:58:56 by mikhaing         ###   ########.fr       */
+/*   Created: 2025/09/18 13:37:51 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/11/24 20:19:49 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 14:12:40 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Created: 2025/10/02 14:12:40 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/11/24 20:19:49 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

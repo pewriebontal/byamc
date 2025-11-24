@@ -6,11 +6,11 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 00:29:34 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:19:49 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
 // use with caution untested
 int	ft_strcmp(const char *s1, const char *s2)

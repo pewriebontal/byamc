@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 16:06:13 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/15 03:35:36 by mikhaing         ###   ########.fr       */
+/*   Created: 2025/09/20 16:06:13 by mikhaing          #+#    #+#             */
+/*   Updated: 2025/11/24 20:48:06 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	return ((int)ft_atol(str));
 }

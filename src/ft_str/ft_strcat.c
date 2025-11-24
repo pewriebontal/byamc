@@ -6,11 +6,11 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/14 06:44:23 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/11/21 07:08:56 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:19:49 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <libft.h>
 
 size_t	ft_strcat(char *dst, const char *src)
 {

@@ -6,11 +6,11 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 21:06:21 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/30 16:36:40 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/11/24 20:21:37 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/gzdef.h>
+#include <libft.h>
 
 /**
  * @brief Safely frees dynamically allocated memory and
