@@ -1,4 +1,4 @@
-# LIB-BYAMC (pronounced "lib-b-yam-see") - Bon's Yet Another Mini C Standard Library
+# LIB-KYAMC (pronounced "lib-ky-am-see") - Kai's Yet Another Mini C Standard Library
 
 <p align="center">
 <img src="https://dl.bontal.net/graphics/webp/byamc/logo_no_bg.webp" alt="Byamc Logo" width="250"/>
