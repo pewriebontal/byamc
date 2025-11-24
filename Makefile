@@ -6,7 +6,7 @@
 #    By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/03 20:27:07 by mikhaing          #+#    #+#              #
-#    Updated: 2025/11/24 20:22:31 by mikhaing         ###   ########.fr        #
+#    Updated: 2025/11/24 21:31:48 by mikhaing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,15 +53,6 @@ SRCS	= $(SRC_DIR)ft_is/ft_isalnum.c \
 		  $(SRC_DIR)ft_is/ft_isprint.c \
 		  $(SRC_DIR)ft_is/ft_isspace.c \
 		  $(SRC_DIR)ft_is/ft_is_uppercase.c \
-		  $(SRC_DIR)ft_lst/ft_lstadd_back.c \
-		  $(SRC_DIR)ft_lst/ft_lstadd_front.c \
-		  $(SRC_DIR)ft_lst/ft_lstclear.c \
-		  $(SRC_DIR)ft_lst/ft_lstdelone.c \
-		  $(SRC_DIR)ft_lst/ft_lstiter.c \
-		  $(SRC_DIR)ft_lst/ft_lstlast.c \
-		  $(SRC_DIR)ft_lst/ft_lstmap.c \
-		  $(SRC_DIR)ft_lst/ft_lstnew.c \
-		  $(SRC_DIR)ft_lst/ft_lstsize.c \
 		  $(SRC_DIR)ft_mem/ft_alloc_multidim.c \
 		  $(SRC_DIR)ft_mem/ft_bzero.c \
 		  $(SRC_DIR)ft_mem/ft_calloc.c \
@@ -104,11 +95,22 @@ SRCS	= $(SRC_DIR)ft_is/ft_isalnum.c \
 		  $(SRC_DIR)ft_to/ft_atol.c \
 		  $(SRC_DIR)ft_to/ft_itoa.c \
 		  $(SRC_DIR)ft_to/ft_tolower.c \
-		  $(SRC_DIR)ft_to/ft_toupper.c \
+		  $(SRC_DIR)ft_to/ft_toupper.c
+
+BONUS_SRCS = $(SRC_DIR)ft_lst/ft_lstadd_back.c \
+		  $(SRC_DIR)ft_lst/ft_lstadd_front.c \
+		  $(SRC_DIR)ft_lst/ft_lstclear.c \
+		  $(SRC_DIR)ft_lst/ft_lstdelone.c \
+		  $(SRC_DIR)ft_lst/ft_lstiter.c \
+		  $(SRC_DIR)ft_lst/ft_lstlast.c \
+		  $(SRC_DIR)ft_lst/ft_lstmap.c \
+		  $(SRC_DIR)ft_lst/ft_lstnew.c \
+		  $(SRC_DIR)ft_lst/ft_lstsize.c \
 		  $(SRC_DIR)ft_gz/chope.c \
 		  $(SRC_DIR)ft_gz/yeet.c
 
 OBJS	= ${SRCS:.c=.o}
+BONUS_OBJS = ${BONUS_SRCS:.c=.o}
 
 NAME	= libft.a
 
@@ -116,6 +118,10 @@ all:		${NAME}
 
 $(NAME):	${OBJS}
 			ar rc ${NAME} ${OBJS}
+			ranlib ${NAME}
+
+bonus:		${OBJS} ${BONUS_OBJS}
+			ar rc ${NAME} ${OBJS} ${BONUS_OBJS}
 			ranlib ${NAME}
 
 so:			${OBJS}
