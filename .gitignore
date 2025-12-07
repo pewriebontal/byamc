@@ -53,3 +53,5 @@ dkms.conf
 
 # tests which are not friendly with norminette
 tests/
+
+libftTester/

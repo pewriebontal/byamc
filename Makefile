@@ -6,7 +6,7 @@
 #    By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mikhaing          #+#    #+#              #
-#    Updated: 2025/11/21 07:22:56 by mikhaing         ###   ########.fr        #
+#    Updated: 2025/12/07 15:33:02 by mikhaing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -111,10 +111,7 @@ SRCS	= $(SRC_DIR)ft_is/ft_isalnum.c \
 		  $(SRC_DIR)gnl/get_next_line.c \
 		  $(SRC_DIR)ft_gz/chope.c \
 		  $(SRC_DIR)ft_gz/spill_the_tea.c \
-		  $(SRC_DIR)ft_gz/yeet.c \
-		  $(SRC_DIR)burma_mhu_pyu/free.c \
-		  $(SRC_DIR)burma_mhu_pyu/malloc.c \
-		  $(SRC_DIR)burma_mhu_pyu/printf.c
+		  $(SRC_DIR)ft_gz/yeet.c
 
 OBJS	= ${SRCS:.c=.o}
 
