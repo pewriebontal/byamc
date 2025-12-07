@@ -6,7 +6,7 @@
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 02:00:20 by mikhaing          #+#    #+#             */
-/*   Updated: 2025/08/31 00:48:48 by mikhaing         ###   ########.fr       */
+/*   Updated: 2025/12/07 16:01:11 by mikhaing         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define GZDEF_H
 
 # include <kyamc/kyamc.h>
-# include <kyamc/ft_printf.h>
 
 # define VIBING 1
 # define NOT_VIBING 0

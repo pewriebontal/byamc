@@ -6,7 +6,7 @@
 #    By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/03 20:27:07 by mikhaing          #+#    #+#              #
-#    Updated: 2025/12/07 15:33:02 by mikhaing         ###   ########.fr        #
+#    Updated: 2025/12/07 16:01:45 by mikhaing         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,9 +72,6 @@ SRCS	= $(SRC_DIR)ft_is/ft_isalnum.c \
 		  $(SRC_DIR)ft_mem/ft_memmove.c \
 		  $(SRC_DIR)ft_mem/ft_memset.c \
 		  $(SRC_DIR)ft_mem/ft_realloc.c \
-		  $(SRC_DIR)ft_printf/ft_printf.c \
-		  $(SRC_DIR)ft_printf/ft_printf_utils_1.c \
-		  $(SRC_DIR)ft_printf/ft_printf_utils.c \
 		  $(SRC_DIR)ft_put/ft_putchar.c \
 		  $(SRC_DIR)ft_put/ft_putchar_fd.c \
 		  $(SRC_DIR)ft_put/ft_putendl_fd.c \
@@ -110,7 +107,6 @@ SRCS	= $(SRC_DIR)ft_is/ft_isalnum.c \
 		  $(SRC_DIR)ft_to/ft_toupper.c \
 		  $(SRC_DIR)gnl/get_next_line.c \
 		  $(SRC_DIR)ft_gz/chope.c \
-		  $(SRC_DIR)ft_gz/spill_the_tea.c \
 		  $(SRC_DIR)ft_gz/yeet.c
 
 OBJS	= ${SRCS:.c=.o}
