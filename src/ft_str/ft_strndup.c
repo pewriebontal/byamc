@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <kyamc/kyamc.h>
 
 char	*ft_strndup(char const *src, size_t n)
 {

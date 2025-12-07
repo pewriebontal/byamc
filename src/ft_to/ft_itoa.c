@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <kyamc/kyamc.h>
 
 static int	ft_numlen(long n, int is_unsigned)
 {

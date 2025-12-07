@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <kyamc/kyamc.h>
 
 // use with caution untested
 int	ft_strcmp(const char *s1, const char *s2)

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/gzdef.h>
+#include <kyamc/gzdef.h>
 
 int	spill_the_tea(const char *fmt, ...)
 {

@@ -13,8 +13,8 @@
 #ifndef GNL_H
 # define GNL_H
 
-# include <byamc/byamc.h>
-# include <byamc/gzdef.h>
+# include <kyamc/kyamc.h>
+# include <kyamc/gzdef.h>
 # include <stdlib.h>
 # include <unistd.h>
 

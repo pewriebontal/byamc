@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <kyamc/kyamc.h>
 
 char	*ft_strloc(size_t n)
 {

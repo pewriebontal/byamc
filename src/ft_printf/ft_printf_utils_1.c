@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/ft_printf.h>
+#include <kyamc/kyamc.h>
+#include <kyamc/ft_printf.h>
 
 int	handle_int(int n, int fd)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
+#include <kyamc/kyamc.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

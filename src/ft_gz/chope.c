@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/gzdef.h>
+#include <kyamc/gzdef.h>
 
 void	*chope(size_t size)
 {

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/gzdef.h>
+#include <kyamc/kyamc.h>
+#include <kyamc/gzdef.h>
 
 static void	*cleanup_on_alloc_fail(void **ptr_array, size_t count,
 		int dimensions, const size_t *dim_sizes)

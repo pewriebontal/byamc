@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   byamc.h                                            :+:      :+:    :+:   */
+/*   kyamc.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mikhaing <0x@bontal.net>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef BYAMC_H
-# define BYAMC_H
+#ifndef KYAMC_H
+# define KYAMC_H
 
-# include <byamc/bool.h>
+# include <kyamc/bool.h>
 # include <stddef.h>
 # include <stdio.h>
 # include <stdlib.h>
@@ -113,4 +113,4 @@ int					ft_tolower(int c);
 long				ft_atol(char *str);
 int					ft_atoi(char *str);
 
-#endif /* BYAMC_H */
+#endif /* KYAMC_H */

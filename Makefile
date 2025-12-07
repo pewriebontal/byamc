@@ -115,7 +115,7 @@ SRCS	= $(SRC_DIR)ft_is/ft_isalnum.c \
 
 OBJS	= ${SRCS:.c=.o}
 
-NAME	= byamc.a
+NAME	= kyamc.a
 
 all:		${NAME}
 
@@ -124,7 +124,7 @@ $(NAME):	${OBJS}
 			ranlib ${NAME}
 
 so:			${OBJS}
-			$(CC) $(CFLAGS) $(OPTI) -shared -o byamc.so $(OBJS)
+			$(CC) $(CFLAGS) $(OPTI) -shared -o kyamc.so $(OBJS)
 
 %.o: %.c
 			$(CC) -fPIC $(OPTI) $(CFLAGS) -c $< -o $@

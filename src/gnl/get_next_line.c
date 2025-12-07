@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/gnl.h>
-#include <byamc/limits.h>
+#include <kyamc/kyamc.h>
+#include <kyamc/gnl.h>
+#include <kyamc/limits.h>
 
 char	*find_new_line(char **temp_box)
 {

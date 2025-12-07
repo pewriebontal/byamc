@@ -13,8 +13,8 @@
 #ifndef GZDEF_H
 # define GZDEF_H
 
-# include <byamc/byamc.h>
-# include <byamc/ft_printf.h>
+# include <kyamc/kyamc.h>
+# include <kyamc/ft_printf.h>
 
 # define VIBING 1
 # define NOT_VIBING 0

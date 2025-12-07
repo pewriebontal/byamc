@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/ft_printf.h>
+#include <kyamc/ft_printf.h>
 
 static int	do_print(int fd, char fmt, va_list args)
 {

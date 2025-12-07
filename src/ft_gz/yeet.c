@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/gzdef.h>
+#include <kyamc/gzdef.h>
 
 /**
  * @brief Safely frees dynamically allocated memory and

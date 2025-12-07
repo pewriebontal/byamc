@@ -13,8 +13,8 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <byamc/byamc.h>
-# include <byamc/gzdef.h>
+# include <kyamc/kyamc.h>
+# include <kyamc/gzdef.h>
 # include <stdarg.h>
 # include <stdint.h>
 

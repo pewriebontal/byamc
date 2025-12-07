@@ -1,7 +1,7 @@
-# LIB-BYAMC (pronounced "lib-b-yam-see") - Bon's Yet Another Mini C Standard Library
+# LIB-KYAMC (pronounced "lib-k-yam-see") - Kai's Yet Another Mini C Standard Library
 
 <p align="center">
-<img src="https://dl.bontal.net/graphics/webp/byamc/logo_no_bg.webp" alt="Byamc Logo" width="250"/>
+<img src="https://dl.bontal.net/graphics/webp/byamc/logo_no_bg.webp" alt="Kyamc Logo" width="250"/>
 </p>
 
 This project is a collection of various utility functions and modules written in C as part of 42's core curriculum. It includes functions for checking character types, manipulating lists, memory management, string manipulation, get_next_line and printf.
@@ -22,11 +22,11 @@ The project is structured into several directories, each containing related func
 
 ## Usage
 
-To use the functions in this project, include the appropriate header files in your C source files. For example, to use the ft_isalpha function, you would include the byamc.h header file:
+To use the functions in this project, include the appropriate header files in your C source files. For example, to use the ft_isalpha function, you would include the kyamc.h header file:
 
 ```c
-#include <byamc/byamc.h>
-#include <byamc/ft_printf.h>
+#include <kyamc/kyamc.h>
+#include <kyamc/ft_printf.h>
 ```
 
 Then, you can call the function like this:
@@ -38,10 +38,10 @@ if (ft_isalpha('a'))
 }
 ```
 
-To use burmese functions, include the `<byamc/burmese.h>` header file:
+To use burmese functions, include the `<kyamc/burmese.h>` header file:
 
 ```c
-#include <byamc/burmese.h>
+#include <kyamc/burmese.h>
 ```
 
 Then, you can call the function like this:

@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/gzdef.h>
+#include <kyamc/kyamc.h>
+#include <kyamc/gzdef.h>
 
 /**
  * @brief Recursively frees a dynamically allocated multi-dimensional array.

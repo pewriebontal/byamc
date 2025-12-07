@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <byamc/byamc.h>
-#include <byamc/gzdef.h>
+#include <kyamc/kyamc.h>
+#include <kyamc/gzdef.h>
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
